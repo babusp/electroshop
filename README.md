@@ -12,7 +12,9 @@ mysql
 add virtual env 
 
 python -m venv venv
+
 in win .\venv\scripts\activate
+
 in linux source venv/bin/activate
 
 pip install -r requirement.txt
