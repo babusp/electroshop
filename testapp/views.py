@@ -38,14 +38,14 @@ from twilio.rest import Client
 class sendotpview(views.APIView):
     def post(self,request):       
         print("------------------------")  
-        account_sid = "ACddac454163743d33509f13f5615a8a83"
-        auth_token ='2dce4f98818be60c8d28c991d802b9f5'
+        account_sid = "ACxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        auth_token ='2dxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
         client = Client(account_sid, auth_token)
 
         message = client.messages.create(
-                                    from_='+15555555555',
+                                    from_='+1555xxxxxxx',
                                     body='Hi there',
-                                    to='+918121862933'
+                                    to='+918121xxxxxxx'
                                 )
 
         print(message.sid)
